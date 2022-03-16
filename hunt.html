@@ -21,7 +21,7 @@
         <div class="d-inline p-2 bg-primary text-black centre">Click on the squares to search for bird.</div>
         <div class="d-inline p-2 bg-success text-white" id="shakes"> Number of shakes is zero.</div>
         <div class="d-inline p-2 bg-warning text-white" id="score"> Location score is unknown.</div>
-        <button type="button" class="btn btn-primary"  onclick="reset()">New Game</button>
+        
     </div>
     <br>
 
@@ -116,14 +116,14 @@
 
     <script>
         var ids = ["id0", "id1", "id2", "id3", "id4", "id5", "id6", "id7", "id8", "id9", "id10", "id11", "id12", "id13", "id14", "id15", "id16", "id17", "id18", "id19", "id20", "id21", "id22", "id23", "id24"]
-        var shakeCount = 0
-        var birdLocation = 18
+        var shakeCount = 0;
+        var birdLocation = 18;
 
         function check(position) {
             id = ids[position]
             img_pos = document.getElementById(id)
             if (position == birdLocation)
-                img_pos.src = "hawk.jpg"
+                img_pos.src = "bird.jpg"
             else
                 img_pos.src = "nest.jpg"
 
